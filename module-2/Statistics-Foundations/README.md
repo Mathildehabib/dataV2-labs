@@ -13,24 +13,57 @@ You need to submit a markdown file with the solution to the following challenges
 ### Challenge 1
 One player rolls two dices. Describe the measurable space and the random variable for:
 * A. The values that the player obtains.
+--> 6 * 6
+
 * B. The sum of the values obtained.
+from 2 to 12 (range = 11)
+
 * C. The maximum value obtained after rolling both dices.
+max(1,2)
 
 Describe the following events:
 * Case A: Both values are greater than 5.
+(1/6)*(1/6) = 1/36
+
 * Case B: The sum of values is even.
+(36/2)
+
 * Case C: The maximum is the value of both rolls.
+6*((1/6)*(1/6)) = 6/36 = 1/6
+
 
 ### Challenge 2
-One player picks two cards from a poker deck. Describe the measurable space and the random variable for:
+One player picks two cards from a poker deck. Describe the measurable space and the random variable for :
 * A. The number of figures he picks.
+pick 2 = (12/52*11/51) = 4.9%
+pick 1 = (40/52*12/51)+(12/52*40/51) = 36.2%
+pick 0 = (40/52*39/51) = 58.8%
+measurable space is 3
+
 * B. The sum of card values. Consider that the value of figures is 10 and the value of aces is 15.
+4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30.
+Measurable space is 19.
+
 * C. The number of hearts or spades he picks.
+hearts = 13/52 = 25%
+spades = 13/52 = 25%
 
 Describe the following events:
 * Case A: The number of figures in the cards the player picked is two.
+pick 2 = (12/52*11/51) = 4.9%
+
 * Case B: The sum of card values is 17.
+7+J    J+7
+7+Q    Q+7
+7+K    K+7
+8+9    9+8
+10+7   7+10
+A+2    2+A
+(12 possiblities) * (4 * 4)colors * (1/52 * 1/51) = 96/2652 = 7,24%
+
 * Case C: The value of both cards is less than 8.
+(24/52 * 23/51) = 20.81%
+
 
 ### Challenge 3
 Two players roll a dice. Describe the measurable space and the random variable for:
